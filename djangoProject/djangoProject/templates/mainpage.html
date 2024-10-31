@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>이게 장고야 어</title>
+</head>
+<body>
+    {% extends 'base.html' %}
+    {% block content %}
+    {% load static %}
+      <h1>Django Books</h1>
+      <p>이제 페이지를 하나씩 채워보도록 합시다.</p> 
+    {% endblock %}
+    <span class="menu"><a href="{% url 'djangoBooks:list' %}">도서목록</a></span>
+</body>
+</html>
